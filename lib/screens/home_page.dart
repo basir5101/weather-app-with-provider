@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
           return Column(
             children: [
               weatherPro.isLoading
-                  ? CircularProgressIndicator()
+                  ? const CircularProgressIndicator()
                   : Row(
                       children: [
                         Container(
@@ -81,7 +81,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: ListView(
                     children: [
                       ListTile(
-                        leading: Icon(Icons.thermostat_rounded),
+                        shape: Border(bottom: BorderSide(width: 0.5, color: AllColor.appBarColor)),
+                        leading: Icon(Icons.where_to_vote),
                         title: Text('Temperature',
                             style: TextStyle(
                                 color: AllColor.fontColor, fontSize: 20)),
@@ -95,7 +96,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       ListTile(
-                        leading: Icon(Icons.thermostat_rounded),
+                        shape: Border(bottom: BorderSide(width: 0.5, color: AllColor.appBarColor)),
+                        leading: Icon(Icons.where_to_vote),
                         title: Text('Weather',
                             style: TextStyle(
                                 color: AllColor.fontColor, fontSize: 20)),
@@ -105,7 +107,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: AllColor.fontColor, fontSize: 20)),
                       ),
                       ListTile(
-                        leading: Icon(Icons.thermostat_rounded),
+                        shape: Border(bottom: BorderSide(width: 0.5, color: AllColor.appBarColor)),
+                        leading: Icon(Icons.where_to_vote),
                         title: Text('Humidity',
                             style: TextStyle(
                                 color: AllColor.fontColor, fontSize: 20)),
@@ -116,7 +119,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: AllColor.fontColor, fontSize: 20)),
                       ),
                       ListTile(
-                        leading: Icon(Icons.thermostat_rounded),
+                        shape: Border(bottom: BorderSide(width: 0.5, color: AllColor.appBarColor)),
+                        leading: Icon(Icons.where_to_vote),
                         title: Text('Wind Speed',
                             style: TextStyle(
                                 color: AllColor.fontColor, fontSize: 20)),
